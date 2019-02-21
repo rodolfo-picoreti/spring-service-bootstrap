@@ -4,10 +4,10 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>br.com.wine.service</groupId>
-	<artifactId>inventory</artifactId>
+	<artifactId>customer-service-api</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>inventory-service-api</name>
-	<description>Inventory service REST API definitions</description>
+	<name>customer-service-api</name>
+	<description>Customer service REST API definitions</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>

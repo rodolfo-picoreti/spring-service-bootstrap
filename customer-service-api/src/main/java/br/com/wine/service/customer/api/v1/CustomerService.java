@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 /**
  * CustomerService
  */
+
+@RequestMapping("/api/v1")
 public interface CustomerService {
 
     @GetMapping("/customer") 
