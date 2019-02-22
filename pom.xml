@@ -1,15 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" 
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-
-	<groupId>br.com.wine</groupId>
-	<artifactId>customer-service</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<name>customer-service</name>
-	<description>Customer RESTful service</description>
-	<packaging>pom</packaging>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -21,8 +14,18 @@
 
 	<properties>
 		<java.version>1.8</java.version>
+		<project.version>0.0.1-SNAPSHOT</project.version>
+		<maven.compiler.source>${java.version}</maven.compiler.source>
+		<maven.compiler.target>${java.version}</maven.compiler.target>
 		<spring-cloud.version>Greenwich.RELEASE</spring-cloud.version>
 	</properties>
+
+	<groupId>br.com.wine</groupId>
+	<artifactId>customer-service</artifactId>
+	<version>${project.version}</version>
+	<name>customer-service</name>
+	<description>Customer RESTful service</description>
+	<packaging>pom</packaging>
 
 	<modules>
 		<module>customer-service-api</module>
