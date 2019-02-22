@@ -6,15 +6,15 @@
 
 	<parent>
 		<groupId>br.com.wine</groupId>
-		<artifactId>customer-service</artifactId>
-		<version>${project.version}</version>
+		<artifactId>${service.name}</artifactId>
+		<version>${service.version}</version>
 	</parent>
 
 	<groupId>br.com.wine.service</groupId>
-	<artifactId>customer-service-api</artifactId>
+	<artifactId>${service.name}-api</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>customer-service-api</name>
-	<description>Customer service REST API definitions</description>
+	<name>${service.name}-api</name>
+	<description>${service.name} API definitions</description>
 
 	<dependencies>
 		<dependency>

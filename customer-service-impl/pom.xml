@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" 
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
 		<groupId>br.com.wine</groupId>
-		<artifactId>customer-service</artifactId>
-		<version>${project.version}</version>
+		<artifactId>${service.name}</artifactId>
+		<version>${service.version}</version>
 	</parent>
 
 	<groupId>br.com.wine.service</groupId>
-	<artifactId>customer-service-impl</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<name>customer-service-impl</name>
-	<description>Customer service implementation</description>
+	<artifactId>${service.name}-impl</artifactId>
+	<version>${service.version}</version>
+	<name>${service.name}-impl</name>
+	<description>${service.name} service implementation</description>
 
 	<dependencies>
 		<dependency>
 			<groupId>br.com.wine.service</groupId>
-			<artifactId>customer-service-api</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
+			<artifactId>${service.name}-api</artifactId>
+			<version>${service.version}</version>
 		</dependency>
 
 		<dependency>
@@ -70,6 +70,19 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>com.google.cloud.tools</groupId>
+				<artifactId>jib-maven-plugin</artifactId>
+				<version>1.0.0</version>
+				<configuration>
+					<from>
+						<image>gcr.io/distroless/java:${java.version</image>
+					</from>
+					<to>
+						<image>winecombr/${service.name}:${service.version}</image>
+					</to>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
