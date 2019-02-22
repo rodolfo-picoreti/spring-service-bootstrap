@@ -6,21 +6,21 @@
 
 	<parent>
 		<groupId>br.com.wine</groupId>
-		<artifactId>${service.name}</artifactId>
-		<version>${service.version}</version>
+		<artifactId>customer-service</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 
 	<groupId>br.com.wine.service</groupId>
-	<artifactId>${service.name}-impl</artifactId>
-	<version>${service.version}</version>
-	<name>${service.name}-impl</name>
-	<description>${service.name} service implementation</description>
+	<artifactId>customer-service-impl</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>customer-service-impl</name>
+	<description>customer-service service implementation</description>
 
 	<dependencies>
 		<dependency>
 			<groupId>br.com.wine.service</groupId>
-			<artifactId>${service.name}-api</artifactId>
-			<version>${service.version}</version>
+			<artifactId>customer-service-api</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 
 		<dependency>
@@ -77,10 +77,10 @@
 				<version>1.0.0</version>
 				<configuration>
 					<from>
-						<image>gcr.io/distroless/java:${java.version</image>
+						<image>gcr.io/distroless/java:${java.version}</image>
 					</from>
 					<to>
-						<image>winecombr/${service.name}:${service.version}</image>
+						<image>winecombr/customer-service:${project.version}</image>
 					</to>
 				</configuration>
 			</plugin>

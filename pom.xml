@@ -12,8 +12,6 @@
 	</parent>
 
 	<properties>
-		<service.name>customer-service</service.name>
-		<service.version>0.0.1-SNAPSHOT</service.version>
 		<java.version>11</java.version>
 		<maven.compiler.source>${java.version}</maven.compiler.source>
 		<maven.compiler.target>${java.version}</maven.compiler.target>
@@ -21,14 +19,14 @@
 	</properties>
 
 	<groupId>br.com.wine</groupId>
-	<artifactId>${service.name}</artifactId>
-	<version>${service.version}</version>
-	<name>${service.name}</name>
-	<description>${service.name} project</description>
+	<artifactId>customer-service</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>customer-service</name>
+	<description>customer-service project</description>
 	<packaging>pom</packaging>
 
 	<modules>
-		<module>${service.name}-api</module>
-		<module>${service.name}-impl</module>
+		<module>customer-service-api</module>
+		<module>customer-service-impl</module>
 	</modules>
 </project>
